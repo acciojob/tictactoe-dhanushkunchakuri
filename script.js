@@ -1,5 +1,5 @@
-const player1Input = document.getElementById("player1");
-const player2Input = document.getElementById("player2");
+const player1Input = document.getElementById("player-1");
+const player2Input = document.getElementById("player-2");
 const submitBtn = document.getElementById("submit");
 const gameSection = document.getElementById("game");
 const messageDiv = document.getElementById("message");
@@ -21,10 +21,10 @@ submitBtn.addEventListener("click", () => {
   player1 = player1Input.value.trim();
   player2 = player2Input.value.trim();
 
-  if (player1 === "" || player2 === "") {
-    alert("Please enter names for both players.");
-    return;
-  }
+  // if (player1 === "" || player2 === "") {
+  //   alert("Please enter names for both players.");
+  //   return;
+  // }
 
   symbols = {
     [player1]: "X",
